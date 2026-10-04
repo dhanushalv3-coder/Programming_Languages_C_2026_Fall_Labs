@@ -49,4 +49,3 @@ float array_avg(int arr[], int size) {
 
     return (float)sum / size;
 }
-lab3_t
