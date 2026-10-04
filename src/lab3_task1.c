@@ -49,3 +49,21 @@ float array_avg(int arr[], int size) {
 
     return (float)sum / size;
 }
+
+int main(void) {
+    int numbers[] = {12, 5, 9, 2, 15, 8};
+    int size = sizeof(numbers) / sizeof(numbers[0]);
+
+    printf("Array: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", numbers[i]);
+    }
+    printf("\n");
+
+    printf("Min: %d\n", array_min(numbers, size));
+    printf("Max: %d\n", array_max(numbers, size));
+    printf("Sum: %d\n", array_sum(numbers, size));
+    printf("Average: %.2f\n", array_avg(numbers, size));
+
+    return 0;
+}
