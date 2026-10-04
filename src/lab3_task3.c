@@ -28,3 +28,17 @@ void my_strcpy(char *dest, const char *src) {
 
     dest[i] = '\0';
 }
+
+int main() {
+    char source[] = "Hello, World!";
+    char destination[50];
+    
+    printf("Original string: %s\n", source);
+    printf("Length of string: %d\n", my_strlen(source));
+    
+    my_strcpy(destination, source);
+    printf("Copied string: %s\n", destination);
+    printf("Length of copied string: %d\n", my_strlen(destination));
+    
+    return 0;
+}
